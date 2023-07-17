@@ -1,0 +1,129 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat:ital,wght@1,100&family=Poppins:wght@200;300;400&family=Recursive&family=Red+Hat+Display:ital,wght@0,700;1,500;1,900&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+.container {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ max-width: 450px;
+ background: white;
+ border-radius: 20px;
+ overflow: hidden;
+}
+
+.summary{
+    padding: 7%;
+    text-align: center;
+}
+h1{
+    color:  hsl(245, 75%, 52%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.summary p1{
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+
+.box{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-top: 20px;
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left h2{
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 20px;
+    color: hsl(245, 75%, 52%);
+}
+.left p{
+    font-size: 15px;
+    margin-left: 20px;
+    color: #8a8a8a;
+}
+.box a{
+    font-weight: 900;
+    
+    color: hsl(245, 47%, 23%);
+    transition: color .3s ease;
+}
+.box a:hover{
+    text-decoration: none;
+    color : hsl(245, 75%, 52%)
+}
+
+a.proceed-btn {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    margin: 30px 0;
+    transition: color .3s ease;
+}
+a.proceed-btn:hover{
+    color: hsl(225, 23%, 55%);
+}
+a.Cancel-btn{
+    color: hsl(225, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 3s ease;
+}
+a.Cancel-btn:hover{
+    color: hsl(245, 47%, 23%);
+}
+@media only screen and (max-width:425px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+        
+    }
+    .container{
+        max-width: 87%;
+
+    }
+    .summary h1{
+        font-size: 23px;
+    }
+    .box{
+        padding: 12px;
+    }
+    .box left{
+        margin-left: 10px;
+    }
+    a.proceed-btn , a.Cancel-btn , .plan-box a{
+        font-size: 13px;
+    }
+    
+    
+}
